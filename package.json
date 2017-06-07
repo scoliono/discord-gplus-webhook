@@ -1,0 +1,22 @@
+{
+    "name": "discord-gplus-webhook",
+    "version": "0.1.0",
+    "description": "A Discord webhook that keeps track of communities on G+",
+    "keywords": [
+        "discord-webhooks",
+        "google-plus"
+    ],
+    "license": "MIT",
+    "main" : "webhook.js",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/scoliono/discord-gplus-webhook.git"
+    },
+    "dependencies": {
+        "request": "^2.81.0",
+        "xpath": "^0.0.24",
+        "xmldom": "^0.1.27",
+        "async": "^2.4.1",
+        "colors": "^1.1.2"
+    }
+}
