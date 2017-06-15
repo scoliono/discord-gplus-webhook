@@ -102,7 +102,8 @@ function check_for_posts(community, stream)
 
                     // get the post ready for queueing up
                     conf_posts.push({
-                        "title": comment,
+                        // If comment is just whitespace, provide a placeholder title
+                        "title": comment.replace(/\s/g, '').length ? comment : (image === config.default_banner ? "[Posted a poll]" : "[Posted an image]"),
                         "type": "rich",
                         "url": url.replace(".", "https://plus.google.com"),
                         "description": "New post",
