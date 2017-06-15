@@ -77,8 +77,8 @@ function check_for_posts(community, stream)
                     // Gets all the info about a post using nothing but xpath
                     let author = {
                         "name": xpath.select1("div[contains(@class, 'dzuq1e')]/div[@class='nMlfCf']/div[@class='Cd5D8b']/div[@class='xHn24c']/a/text()", e).data,
-                        "url": xpath.select1("div[contains(@class, 'dzuq1e')]/a[contains(@class, 'X1U4Ie')]/@href", e).value.replace(".", "https://plus.google.com"),
-                        "icon_url": xpath.select1("div[contains(@class, 'dzuq1e')]/a[contains(@class, 'X1U4Ie')]/img/@src", e).value
+                        "url": xpath.select1("div[contains(@class, 'dzuq1e')]/a/@href", e).value.replace(".", "https://plus.google.com"),
+                        "icon_url": xpath.select1("div[contains(@class, 'dzuq1e')]/a/img/@src", e).value
                     };
 
                     // 2 cases: regular, pinned posts
